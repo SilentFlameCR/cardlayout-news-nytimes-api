@@ -8,7 +8,12 @@ class App extends React.Component {
   render() {
   return (
    <div className="container">
-     <div className="row">
+    <div className="row">
+        <div className="container">
+            <div className="col-xs-12">
+                 <h1 className="main-heading">Your Top 10 news of the day</h1>
+             </div>
+        </div>
         <div className="container">
          <Card idd="0"/>
          <Card idd="1"/>

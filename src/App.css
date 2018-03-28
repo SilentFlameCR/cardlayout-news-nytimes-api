@@ -7,6 +7,10 @@
     padding-right: 0;
 }
 
+.main-heading {
+    text-align: center;
+}
+
 .image {
     height: 200px;
     min-width: 100%;
