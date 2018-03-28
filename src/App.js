@@ -10,29 +10,33 @@ class App extends React.Component {
    <div className="container">
     <div className="row">
         <div className="container">
+            <div class="col-xs-12">
+                <button id="home-button" className="center-block"><a href="http://www.rahulrodrigues.ca">Home</a></button>
+            </div>
             <div className="col-xs-12">
-                 <h1 className="main-heading">Your Top 10 news of the day</h1>
+                 <h1 className="main-heading">Your top 10 news of the day</h1>
+                 <h6 className="sub-heading">Powered by newsapi.org</h6>
              </div>
         </div>
         <div className="container">
-         <Card idd="0"/>
-         <Card idd="1"/>
+         <Card id="0"/>
+         <Card id="1"/>
          </div>
          <div className="container">
-         <Card idd="2"/>
-         <Card idd="3"/>
+         <Card id="2"/>
+         <Card id="3"/>
          </div>
          <div className="container">
-         <Card idd='4'/>
-         <Card idd='5'/>
+         <Card id='4'/>
+         <Card id='5'/>
          </div>
          <div className="container">
-         <Card idd='6'/>
-         <Card idd='7'/>
+         <Card id='6'/>
+         <Card id='7'/>
          </div>
          <div className="container">
-         <Card idd='8'/>
-         <Card idd='9'/>
+         <Card id='8'/>
+         <Card id='9'/>
          </div>
       
      </div>

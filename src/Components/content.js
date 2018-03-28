@@ -5,9 +5,9 @@ class Content extends React.Component {
         return(
             <div className="content col-xs-12"> 
                
-                <h1>{this.props.title}</h1>
-                <p>{this.props.content}</p>
-                <a href={this.props.url}>Click here to learn more</a>
+                <h2 className="title">{this.props.title}</h2>
+                <p className="content">{this.props.content}</p>
+                <a className="link" href={this.props.url}>Click here to learn more</a>
             </div>
         );
     }

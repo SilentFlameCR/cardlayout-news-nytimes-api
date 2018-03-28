@@ -42,13 +42,13 @@ class Card extends React.Component {
       fetch(`https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=${API_KEY}`)
       .then(response => response.json())
       .then(data => {
-          console.log(data);
-          const randomTen = Math.floor(Math.random() * 10);
+          /*console.log(data);
+          const randomTen = Math.floor(Math.random() * 10);*/
           this.setState({
-              articleTitle: data.articles[this.props.idd].title,
-              articleContent: data.articles[this.props.idd].description,
-              articleImage: data.articles[this.props.idd].urlToImage,
-              articleUrl: data.articles[this.props.idd].url
+              articleTitle: data.articles[this.props.id].title,
+              articleContent: data.articles[this.props.id].description,
+              articleImage: data.articles[this.props.id].urlToImage,
+              articleUrl: data.articles[this.props.id].url
           })
       })
   }
@@ -57,7 +57,7 @@ class Card extends React.Component {
     return (
         
       
-         <div className="card col-xs-offset-1 col-xs-10 col-md-5">
+         <div className="card col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-5">
 
             <div className="container-fluid">
                 <Image 

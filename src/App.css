@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i,900,900i|Roboto+Slab');
+
 .card {
     margin-top: 2em;
     background-color: white;
@@ -9,6 +11,12 @@
 
 .main-heading {
     text-align: center;
+    font-family: Lato;
+}
+
+.sub-heading {
+    text-align: center;
+    font-family: Lato;
 }
 
 .image {
@@ -56,4 +64,50 @@
     cursor: pointer;
 }
 
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f16051;
+  color: #fff;
+  font-weight: 100;
+}
 
+button:active {
+  outline: none;
+}
+
+#home-button {
+    margin-top: 1em;
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+#home-button a {
+    color: white;
+}
+
+#home-button a:hover {
+    text-decoration: none;
+}
+
+.title {
+    font-family: Lato;
+    /*font-style: italic;*/
+    font-weight: 700;
+}
+
+.content {
+    font-family: Roboto Slab;
+}
+
+@media only screen and (min-width: 768px) {
+    /*body {
+        background-color: lightblue;
+    }*/
+    
+} 
