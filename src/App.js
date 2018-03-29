@@ -5,12 +5,31 @@ import Card from './Components/card';
 
 class App extends React.Component {
     
+    tenCards = () => { 
+        let block = [];
+        
+        /*JSX prop value have to be expression or text*/
+        for(var i = 0; i <= 9; i+=2){
+            block.push(
+                <div className="container" key={`container${i}`} >
+                    <Card id={`${i}`} />
+                    <Card id={`${i+1}`} />
+                </div>
+            );
+            
+            
+        }
+        
+        return block;
+    }
+    
   render() {
+      
   return (
    <div className="container">
     <div className="row">
         <div className="container">
-            <div class="col-xs-12">
+            <div className="col-xs-12">
                 <button id="home-button" className="center-block"><a href="http://www.rahulrodrigues.ca">Home</a></button>
             </div>
             <div className="col-xs-12">
@@ -18,26 +37,8 @@ class App extends React.Component {
                  <h6 className="sub-heading">Powered by newsapi.org</h6>
              </div>
         </div>
-        <div className="container">
-         <Card id="0"/>
-         <Card id="1"/>
-         </div>
-         <div className="container">
-         <Card id="2"/>
-         <Card id="3"/>
-         </div>
-         <div className="container">
-         <Card id='4'/>
-         <Card id='5'/>
-         </div>
-         <div className="container">
-         <Card id='6'/>
-         <Card id='7'/>
-         </div>
-         <div className="container">
-         <Card id='8'/>
-         <Card id='9'/>
-         </div>
+        
+        {this.tenCards()}
       
      </div>
    </div>
