@@ -106,6 +106,10 @@ button:active {
     font-family: Roboto Slab;
 }
 
+.card:last-child {
+    margin-bottom: 2em;
+}
+
 @media only screen and (min-width: 768px) {
     /*body {
         background-color: lightblue;

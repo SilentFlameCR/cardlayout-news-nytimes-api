@@ -40,7 +40,7 @@ class Social extends React.Component {
 
                     </div>
 
-                    <p className="col-xs-1"> | </p>
+                    <p className="col-xs-2"> | </p>
 
                     <div className="comments col-xs-5">
                         <img src={comment} alt="comment" className="comment"></img>
