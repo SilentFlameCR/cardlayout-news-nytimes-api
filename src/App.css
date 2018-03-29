@@ -27,7 +27,8 @@
 
 .articleImage {
     height: 200px;
-    min-width: 100%;
+    max-width:100%;
+    width:100%;
 }
 
 .user-img {
@@ -43,11 +44,6 @@
     border-radius: 50%;
     position: relative;
     left: -15px;
-}
-
-img {
- max-width:100%;
- width:100%;
 }
 
 .interactive-section {
