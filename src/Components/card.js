@@ -30,12 +30,12 @@ class Card extends React.Component {
       fetch('https://randomuser.me/api/?results=100&nat=US')
       .then(response => response.json())
       .then(data => {
-          /*console.log(data);*/
-          const randomHundred = Math.floor(Math.random() * 100);
+          /*console.log(data);
+          const randomHundred = Math.floor(Math.random() * 100);*/
           this.setState({
-              userDataFirst: data.results[randomHundred].name.first,
-              userDataLast: data.results[randomHundred].name.last,
-              userDataImage: data.results[randomHundred].picture.thumbnail
+              userDataFirst: data.results[this.props.id].name.first,
+              userDataLast: data.results[this.props.id].name.last,
+              userDataImage: data.results[this.props.id].picture.thumbnail
           })
       })
       
