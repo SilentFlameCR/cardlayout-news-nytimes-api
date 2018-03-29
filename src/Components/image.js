@@ -5,9 +5,10 @@ class Image extends React.Component {
         return(
             
             <div className="row">
+               
                 
                     <img src={this.props.image} alt={this.props.image} className="articleImage" />
-                
+               
             </div>
               
         );
