@@ -34,15 +34,15 @@ class Social extends React.Component {
         return(
             <div className="social col-xs-5">
                <div className="row">
-                    <div className="likes col-xs-5">
+                    <div className="likes col-xs-2 col-sm-5">
                         <img src={(this.state.like) ? heart2 : heart} alt="heart" className="heart" onClick={this.handleLikeClick}></img>
                         <span>{" " + this.state.likeCounter}</span>
 
                     </div>
 
-                    <p className="col-xs-2"> | </p>
+                    <p className="col-xs-1 col-sm-1 hl"> | </p>
 
-                    <div className="comments col-xs-5">
+                    <div className="comments col-xs-2 col-sm-5">
                         <img src={comment} alt="comment" className="comment"></img>
                         <span>{" " + this.state.commentCounter}</span>
                     </div>

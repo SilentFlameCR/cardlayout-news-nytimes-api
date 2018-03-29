@@ -13,7 +13,7 @@ class User extends React.Component {
                       <img src={this.props.image} alt={this.props.first} className="userImage" />  
                     </div>
 
-                    <div className="user-name col-xs-8">
+                    <div className="user-name col-xs-5 col-md-8">
                         {this.props.first + " " + this.props.last}<br></br> {this.state.read} mins ago 
                     </div>
                </div>

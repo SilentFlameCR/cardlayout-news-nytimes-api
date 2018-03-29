@@ -73,6 +73,7 @@ class Card extends React.Component {
 
 
             <div className="interactive-section col-xs-12">
+               
                 <User 
                     first={this.state.userDataFirst}
                     last={this.state.userDataLast}
