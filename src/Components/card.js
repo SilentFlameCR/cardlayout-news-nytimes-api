@@ -39,7 +39,7 @@ class Card extends React.Component {
           })
       })
       
-      fetch(`https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=${API_KEY}`)
+      fetch(`https://newsapi.org/v2/top-headlines?sources=cnn&apiKey=${API_KEY}`)
       .then(response => response.json())
       .then(data => {
           /*console.log(data);
